@@ -1,0 +1,60 @@
+@mixin placeholder() {
+  ::-webkit-input-placeholder {
+      @content;
+  }
+
+  :-moz-placeholder {
+      @content;
+  }
+
+  ::-moz-placeholder {
+      @content;
+  }
+
+  :-ms-input-placeholder {
+      @content;
+  }
+}
+#loader {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  display: block;
+}
+
+#loader .loaderImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  display: block;
+  margin: auto;
+  // -webkit-animation: spin 2s linear infinite;
+  // animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+      -webkit-transform: rotateY(0deg);
+  }
+
+  100% {
+      -webkit-transform: rotateY(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+      transform: rotateY(0deg);
+  }
+
+  100% {
+      transform: rotateY(360deg);
+  }
+}

@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.min.css" rel="stylesheet">
+
+    <title>JB Online Trading</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container-fluid">
+            
+            <nav class="navbar navbar-expand-sm navbar-light bg-transparent">
+                <a class="navbar-brand" href="#"><img src="./images/mainlogo.png" alt="JB Online Trading"></a>
+               
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./images/no_user.png" class="avatar img-fluid rounded-circle mr-1"
+                            alt="Chris Wood" /> <span class="text-dark  d-none  d-md-inline">Chris Wood</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+
+        </div>
+    </header>
+    <div class="site-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="whiteBox boxWrap">
+                        <h3>Upcoming Draw</h3>
+                        <p>05:45 PM </p>
+                        <div class="cycle-slideshow box" id="box4">
+                            <a title="Tara yantra" alt="Tara yantra" data-rel="tooltip"><img alt="Tara yantra"
+                                    class="img" src="./images/1_l.jpg" /></a>
+                            <a title="Shani yantra" alt="Shani yantra" data-rel="tooltip"><img alt="Shani yantra"
+                                    class="img" src="./images/2_l.jpg" /></a>
+                            <a title="Pooja Yantra" alt="Pooja Yantra" data-rel="tooltip"><img alt="Pooja Yantra"
+                                    class="img" src="./images/3_l.jpg" /></a>
+                            <a title="Narsimha Yantra" alt="Narsimha Yantra" data-rel="tooltip"><img
+                                    alt="Narsimha Yantra" class="img" src="./images/5_l.jpg" /></a>
+                            <a title="Vastu Yantra" alt="Vastu Yantra" data-rel="tooltip"><img alt="Vastu Yantra"
+                                    class="img" src="./images/6_l.jpg" /></a>
+                            <a title="Rahu Yantra" alt="Rahu Yantra" data-rel="tooltip"><img alt="Rahu Yantra"
+                                    class="img" src="./images/7_l.jpg" /></a>
+                            <a title="Chakra Yantra" alt="Chakra Yantra" data-rel="tooltip"><img alt="Chakra Yantra"
+                                    class="img" src="./images/8_l.jpg" /></a>
+                            <a title="Vashi Yantra" alt="Vashi Yantra" data-rel="tooltip"><img alt="Vashi Yantra"
+                                    class="img" src="./images/9_l.jpg" /></a>
+                            <a title="Yoga Yantra" alt="Yoga Yantra" data-rel="tooltip"><img alt="Yoga Yantra"
+                                    class="img" src="./images/10_l.jpg" /></a>
+                        </div>
+                        <div id="countdown">
+                            <span class="d-none" id="days"></span>
+                            <span class="d-none" id="hours"></span>
+                            <span id="minutes"></span>
+                            <span class="saprator">:</span>
+                            <span id="seconds"></span>
+                        </div>
+                        <div class="time_mn_box">
+                            <div id="draw_time"></div>
+                            <div id="reverse_time_new"></div>
+                            <div id="hm_timer"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="rightSection">
+                        <div class="btn--group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary">RE PRINT (F1)</button>
+                            <button type="button" class="btn btn-info">PRINT (F2)</button>
+                            <button type="button" class="btn btn-primary">FUTURE (F3)</button>
+                            <button type="button" class="btn btn-warning">CLEAR (F4)</button>
+                            <button type="button" class="btn btn-danger">CANCEL (F6)</button>
+                        </div>
+                        <div class="whiteBox">
+
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="balanceBox">
+                                        <div class="balance">Your Balance : <span>7,699.00</span></div>
+                                        <div class="dated">11 Feb 2021 <span>4:53:20 PM</span></div>
+                                        <input type="text" value="PAYOUT" size="10" autocomplete="off">
+                                        <div class="total">Total : <span>11 X 11 = 121</span></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="row">
+                                        <div class="col-lg-auto col-5-cols">
+                                            <div class="thumbBox">
+                                                <img class="img-fluid" src="./images/1_l.jpg" title="Tara yantra"
+                                                    alt="Tara yantra" data-rel="tooltip" />
+                                                <h6>Tara yantra</h6>
+                                                <input type="text" name="yantra[1]" value="5" size="10"
+                                                    class="inputSuccess" maxlength="4" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-auto col-5-cols">
+                                            <div class="thumbBox">
+                                                <img class="img-fluid" src="./images/2_l.jpg" title="Tara yantra"
+                                                    alt="Tara yantra" data-rel="tooltip" />
+                                                <h6>Tara yantra</h6>
+                                                <input type="text" name="yantra[1]" value="5" size="10"
+                                                    class="inputSuccess" maxlength="4" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-auto col-5-cols">
+                                            <div class="thumbBox">
+                                                <img class="img-fluid" src="./images/3_l.jpg" title="Tara yantra"
+                                                    alt="Tara yantra" data-rel="tooltip" />
+                                                <h6>Tara yantra</h6>
+                                                <input type="text" name="yantra[1]" value="5" size="10"
+                                                    class="inputSuccess" maxlength="4" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-auto col-5-cols">
+                                            <div class="thumbBox">
+                                                <img class="img-fluid" src="./images/1_l.jpg" title="Tara yantra"
+                                                    alt="Tara yantra" data-rel="tooltip" />
+                                                <h6>Tara yantra</h6>
+                                                <input type="text" name="yantra[1]" value="5" size="10"
+                                                    class="inputSuccess" maxlength="4" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-auto col-5-cols">
+                                            <div class="thumbBox">
+                                                <img class="img-fluid" src="./images/5_l.jpg" title="Tara yantra"
+                                                    alt="Tara yantra" data-rel="tooltip" />
+                                                <h6>Tara yantra</h6>
+                                                <input type="text" name="yantra[1]" value="5" size="10"
+                                                    class="inputSuccess" maxlength="4" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-auto col-5-cols">
+                                            <div class="thumbBox">
+                                                <img class="img-fluid" src="./images/6_l.jpg" title="Tara yantra"
+                                                    alt="Tara yantra" data-rel="tooltip" />
+                                                <h6>Tara yantra</h6>
+                                                <input type="text" name="yantra[1]" value="5" size="10"
+                                                    class="inputSuccess" maxlength="4" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-auto col-5-cols">
+                                            <div class="thumbBox">
+                                                <img class="img-fluid" src="./images/7_l.jpg" title="Tara yantra"
+                                                    alt="Tara yantra" data-rel="tooltip" />
+                                                <h6>Tara yantra</h6>
+                                                <input type="text" name="yantra[1]" value="5" size="10"
+                                                    class="inputSuccess" maxlength="4" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-auto col-5-cols">
+                                            <div class="thumbBox">
+                                                <img class="img-fluid" src="./images/8_l.jpg" title="Tara yantra"
+                                                    alt="Tara yantra" data-rel="tooltip" />
+                                                <h6>Tara yantra</h6>
+                                                <input type="text" name="yantra[1]" value="5" size="10"
+                                                    class="inputSuccess" maxlength="4" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-auto col-5-cols">
+                                            <div class="thumbBox">
+                                                <img class="img-fluid" src="./images/9_l.jpg" title="Tara yantra"
+                                                    alt="Tara yantra" data-rel="tooltip" />
+                                                <h6>Tara yantra</h6>
+                                                <input type="text" name="yantra[1]" value="5" size="10"
+                                                    class="inputSuccess" maxlength="4" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-auto col-5-cols">
+                                            <div class="thumbBox">
+                                                <img class="img-fluid" src="./images/10_l.jpg" title="Tara yantra"
+                                                    alt="Tara yantra" data-rel="tooltip" />
+                                                <h6>Tara yantra</h6>
+                                                <input type="text" name="yantra[1]" value="5" size="10"
+                                                    class="inputSuccess" maxlength="4" autocomplete="off">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="hSlider" id="scrollVBottom">
+                <div class="row">
+                    <div class="col-lg-auto col-5-cols">
+                        <div class="thumbBox">
+                            <img class="img-fluid" src="./images/1_l.jpg" title="Tara yantra" alt="Tara yantra"
+                                data-rel="tooltip" />
+                            <h6>Tara yantra</h6>
+                            <div class="dateTime">
+                                <span class="date">11-02-2021</span>
+                                <span class="time">06:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-auto col-5-cols">
+                        <div class="thumbBox">
+                            <img class="img-fluid" src="./images/2_l.jpg" title="Tara yantra" alt="Tara yantra"
+                                data-rel="tooltip" />
+                            <h6>Tara yantra</h6>
+                            <div class="dateTime">
+                                <span class="date">11-02-2021</span>
+                                <span class="time">06:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-auto col-5-cols">
+                        <div class="thumbBox">
+                            <img class="img-fluid" src="./images/3_l.jpg" title="Tara yantra" alt="Tara yantra"
+                                data-rel="tooltip" />
+                            <h6>Tara yantra</h6>
+                            <div class="dateTime">
+                                <span class="date">11-02-2021</span>
+                                <span class="time">06:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-auto col-5-cols">
+                        <div class="thumbBox">
+                            <img class="img-fluid" src="./images/1_l.jpg" title="Tara yantra" alt="Tara yantra"
+                                data-rel="tooltip" />
+                            <h6>Tara yantra</h6>
+                            <div class="dateTime">
+                                <span class="date">11-02-2021</span>
+                                <span class="time">06:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-auto col-5-cols">
+                        <div class="thumbBox">
+                            <img class="img-fluid" src="./images/5_l.jpg" title="Tara yantra" alt="Tara yantra"
+                                data-rel="tooltip" />
+                            <h6>Tara yantra</h6>
+                            <div class="dateTime">
+                                <span class="date">11-02-2021</span>
+                                <span class="time">06:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-auto col-5-cols">
+                        <div class="thumbBox">
+                            <img class="img-fluid" src="./images/6_l.jpg" title="Tara yantra" alt="Tara yantra"
+                                data-rel="tooltip" />
+                            <h6>Tara yantra</h6>
+                            <div class="dateTime">
+                                <span class="date">11-02-2021</span>
+                                <span class="time">06:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-auto col-5-cols">
+                        <div class="thumbBox">
+                            <img class="img-fluid" src="./images/7_l.jpg" title="Tara yantra" alt="Tara yantra"
+                                data-rel="tooltip" />
+                            <h6>Tara yantra</h6>
+                            <div class="dateTime">
+                                <span class="date">11-02-2021</span>
+                                <span class="time">06:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-auto col-5-cols">
+                        <div class="thumbBox">
+                            <img class="img-fluid" src="./images/8_l.jpg" title="Tara yantra" alt="Tara yantra"
+                                data-rel="tooltip" />
+                            <h6>Tara yantra</h6>
+                            <div class="dateTime">
+                                <span class="date">11-02-2021</span>
+                                <span class="time">06:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-auto col-5-cols">
+                        <div class="thumbBox">
+                            <img class="img-fluid" src="./images/9_l.jpg" title="Tara yantra" alt="Tara yantra"
+                                data-rel="tooltip" />
+                            <h6>Tara yantra</h6>
+                            <div class="dateTime">
+                                <span class="date">11-02-2021</span>
+                                <span class="time">06:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-auto col-5-cols">
+                        <div class="thumbBox">
+                            <img class="img-fluid" src="./images/10_l.jpg" title="Tara yantra" alt="Tara yantra"
+                                data-rel="tooltip" />
+                            <h6>Tara yantra</h6>
+                            <div class="dateTime">
+                                <span class="date">11-02-2021</span>
+                                <span class="time">06:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/selectize.min.js"></script>
+    <script src="./js/jquery.cycle2.js"></script>
+    <script src="./js/jquery.cycle2.flip.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        // Autoplay
+        // http://jquery.malsup.com/cycle2/
+        $('.cycle-slideshow').cycle({
+            slides: 'a',
+            fx: 'flipHorz',
+            timeout: 2000
+        });
+
+    </script>
+
+</body>
+
+</html>
