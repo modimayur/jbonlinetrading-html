@@ -1,4 +1,10 @@
 $(function () {
+  $(window).on('read load resize', function () {
+    var $scrollVBottom = $('#scrollVBottom'),
+    $scrollVBottomCol = $($scrollVBottom).find('.col-lg-auto').outerHeight() * 2 + 46 ;
+    console.log('scrollVBottom: '+$scrollVBottomCol);
+    $scrollVBottom.css('max-height', $scrollVBottomCol);
+  });
     $(window).on('load', function () {
         $("#loader").fadeOut();
     });
