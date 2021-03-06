@@ -37,13 +37,16 @@
                                 <input type="text" name="" class="form-control mb-3" placeholder="Email or Phone"> 
                                 <input type="text" name="" class="form-control mb-3" placeholder="Password"> 
 
-                                <div class="checkbox mb-3">
-                                    <label>
-                                      <input type="checkbox" value="remember-me"> Remember me
-                                    </label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="typeofUser" id="typeofUser1">
+                                    <label class="form-check-label" for="typeofUser1">Yantr</label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="typeofUser" id="typeofUser2" checked>
+                                    <label class="form-check-label" for="typeofUser2">Agent</label>
                                   </div>
 
-                                <div class="d-grid gap-2">
+                                <div class="d-grid gap-2 mt-3">
                                 <button class="btn btn-success btn-block">Login</button> 
                                 </div>
                             </form>
