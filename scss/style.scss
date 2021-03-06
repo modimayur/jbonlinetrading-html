@@ -65,6 +65,10 @@ body {
         background-color: #e2bde2;
         padding         : 0px 0 140px;
         margin-bottom   : -135px;
+        &.inner-header{
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
         nav.navbar{
             @media(max-width: 991px){
                 flex-wrap: wrap;

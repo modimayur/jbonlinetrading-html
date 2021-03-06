@@ -1,0 +1,38 @@
+html,
+body{
+    height: 100%;
+}
+.site-content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card {
+        width: 400px;
+        max-width: 100%;
+        border: none;
+        padding: 16px 30px;
+        .navbar-brand{
+            max-width: 200px;
+            margin: auto;
+            img{
+                max-width:100%;
+            }
+        }
+        ul#pills-tab{
+            .nav-item{
+                flex: 1 1 auto;
+                padding: 4px;
+                .nav-link{
+                    border-radius: 5px;
+                    background: transparent;
+                    background-color: #e2bde2;
+                    color: #fff;
+                    &.active{
+                        background: linear-gradient(90deg, #af54ae 0%, #852784 100%);
+                    }
+                }
+            } 
+        }
+    }
+}

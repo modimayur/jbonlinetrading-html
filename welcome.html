@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.min.css" rel="stylesheet">
+
+    <title>Welcome To JB Online Trading</title>
+</head>
+
+<body>
+    <header class="main-header inner-header">
+        <div class="container-fluid">
+
+            <nav class="navbar navbar-expand-sm navbar-light bg-transparent">
+                <a class="navbar-brand" href="#"><img src="./images/mainlogo.png" alt="JB Online Trading"></a>
+
+                <div class="btn--group" role="group" aria-label="Basic example">
+                    <input type="text" class="payout" value="PAYOUT" size="10" autocomplete="off">
+                    <button type="button" class="btn btn-secondary">RE PRINT (F1)</button>
+                    <button type="button" class="btn btn-info">PRINT (F2)</button>
+                    <button type="button" class="btn btn-primary">FUTURE (F3)</button>
+                    <button type="button" class="btn btn-warning">CLEAR (F4)</button>
+                    <button type="button" class="btn btn-success">Jackpot</button>
+                    <button type="button" class="btn btn-danger">CANCEL (F6)</button>
+                </div>
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="text-dark  d-none  d-md-inline">Chris Wood</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+
+        </div>
+    </header>
+    <div class="site-content mt-5">
+        <div class="container-fluid">
+          
+            <div class="alert alert-success" role="alert">
+               <h5> A simple success alert—check it out!</h5>
+               <p> A simple success alert—check it out!</p>
+              </div>
+
+
+
+
+        </div>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/selectize.min.js"></script>
+    <script src="./js/jquery.cycle2.js"></script>
+    <script src="./js/jquery.cycle2.flip.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        // Autoplay
+        // http://jquery.malsup.com/cycle2/
+        $('.cycle-slideshow').cycle({
+            slides: 'a',
+            fx: 'flipHorz',
+            timeout: 2000
+        });
+
+
+        var myModal = new bootstrap.Modal(document.getElementById('smileModal'), {
+            keyboard: false
+        });
+        // myModal.show()
+
+
+    </script>
+
+</body>
+
+</html>
