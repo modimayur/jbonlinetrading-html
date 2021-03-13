@@ -424,3 +424,45 @@ body {
 
 
 }
+
+@media(max-width: 1600px) and (min-width: 1200px){
+    body .rightSection .whiteBox .row-5-cols{
+        margin-bottom: -10px;
+        .col-5-cols {
+            max-width: 16.66%;
+            margin-bottom: 10px;
+            h6{
+                font-weight: bold;
+                font-size: 15px;
+                margin: 3px 0;
+            }
+            input[type="text"] {
+                height: 24px;
+                font-size: 12px;
+                font-weight: bold;
+            }
+        }
+    }
+    body .whiteBox.boxWrap {
+        margin-bottom: 0;
+        h3 {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        p{
+            font-size: 18px;
+            line-height: 18px;
+            margin-bottom: 5px;
+        }
+        .cycle-slideshow{
+            max-width: 225px;
+            margin: auto;
+        }
+        div#countdown {
+            margin: 0px -15px 0;
+            padding: 0 10px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+    }
+}
